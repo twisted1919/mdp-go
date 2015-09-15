@@ -1,0 +1,48 @@
+{
+	"Debug" : {
+		"Enabled"  : false,
+		"Level"    : 0
+	},
+	"DirectoryPickup" : {
+		"Workers"		        : 256,
+		"BufferSize"	        : 64,
+		"StorageDirectory"	    : ""
+	},
+	"DeliveryServers" : [
+		{
+			"Hostname"	            : "",
+			"Port"		            : 25,
+			"Username"	            : "",
+			"Password"	            : "",
+			"MaxConnections"        : 10,
+			"MaxConnectionMessages" : 1,
+			"ConnectionTimeout"     : 30,
+			"SendRetriesCount"		: 3,
+			"TestConnection"		: false,
+			"TestRecipientEmail"    : ""
+		}
+	],
+	"Mailwizz" : [
+		{
+			"PhpCliBinaryPath"   : "/usr/bin/php",
+			"ConsolePath"        : "/the/absolute/path/to/console.php",
+			"CommandName"		 : "send-campaigns",
+			"Campaigns"			 : [
+				{
+					"Type"      : "regular",
+					"Processes" : 50,
+					"Limit"     : 1,
+					"Offset"    : 0,
+					"Pause"     : 2
+				},
+				{
+					"Type"      : "autoresponder",
+					"Processes" : 5,
+					"Limit"     : 1,
+					"Offset"    : 0,
+					"Pause"     : 2
+				}
+			]
+		}
+	]
+}
