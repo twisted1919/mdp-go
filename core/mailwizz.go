@@ -10,7 +10,7 @@ import (
 )
 
 type mailwizzCampaign struct {
-	sync.WaitGroup
+	*sync.WaitGroup
 	Type      string
 	Processes int
 	Limit     int

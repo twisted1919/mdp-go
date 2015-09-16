@@ -1,13 +1,3 @@
-// Copyright 2010 The Go Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style
-// license that can be found in the LICENSE file.
-
-// Package smtp implements the Simple Mail Transfer Protocol as defined in RFC 5321.
-// It also implements the following extensions:
-//	8BITMIME  RFC 1652
-//	AUTH      RFC 2554
-//	STARTTLS  RFC 3207
-// Additional extensions may be handled by clients.
 package smtp
 
 import (
