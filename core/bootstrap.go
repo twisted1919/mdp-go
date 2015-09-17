@@ -14,8 +14,5 @@ func Bootstrap() {
 
 	ticker := time.NewTicker(time.Second * 60)
 	for _ = range ticker.C {
-		if config.Debug.Enabled {
-			fmt.Println("Alive!")
-		}
 	}
 }

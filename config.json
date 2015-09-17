@@ -1,6 +1,6 @@
 {
 	"Debug" : {
-		"Enabled"  : false,
+		"Enabled"  : true,
 		"Level"    : 0
 	},
 	"DirectoryPickup" : {
