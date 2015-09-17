@@ -63,7 +63,8 @@ DirectoryPickup" : {
 		"Offset"    : 0,
 		"Pause"     : 2
 	}
-]```  
+]
+```  
 
 
 ### How everything works:  
