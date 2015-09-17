@@ -28,7 +28,7 @@ DirectoryPickup" : {
 },
 ```  
 
-// this is an "array" of delivery servers used to make the actual delivery for each email from the directory pickup.  
+This is an "array" of delivery servers used to make the actual delivery for each email from the directory pickup:  
 ```
 "DeliveryServers" : [
 	{
@@ -46,7 +46,7 @@ DirectoryPickup" : {
 ]
 ```  
 
-// mailwizz has two campaign types, regular and autoresponders, we define settings for both of them.   
+Mailwizz has two campaign types, regular and autoresponders, we define settings for both of them:   
 ```
 "Campaigns"   : [
 	{
