@@ -164,10 +164,10 @@ func pickDeliveryServer() *deliveryServer {
 							config.DeliveryServers[idx].Password,
 							config.DeliveryServers[idx].Hostname,
 						)
+					} else {
+						config.DeliveryServers[idx].auth = nil
 					}
 					config.DeliveryServers[idx].calledAuth = true
-				} else {
-					config.DeliveryServers[idx].auth = nil
 				}
 				config.DeliveryServers[idx].startConnectionsWatcher()
 				config.DeliveryServers[idx].Unlock()
@@ -298,7 +298,7 @@ func (ds *deliveryServer) emailTest() error {
 		ds.Hostname,
 	)
 
-	if len(ds.Username) > 0 || len(ds.Password) > 0 {
+	if len(ds.Username) == 0 && len(ds.Password) == 0 {
 		ds.auth = nil
 	}
 
